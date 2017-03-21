@@ -1,5 +1,5 @@
 {
-  "name": "gclora-node-sample",
+  "name": "gclora-nodejs-sample",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Steve Dalton <steve@refactor.com.au>",
