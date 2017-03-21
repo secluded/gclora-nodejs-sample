@@ -1,13 +1,9 @@
 {
-  "name": "hazardousgas",
+  "name": "gclora-node-sample",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
+  "author": "Steve Dalton <steve@refactor.com.au>",
+  "license": "MIT",
   "dependencies": {
     "ttn": "^2.1.0"
   }

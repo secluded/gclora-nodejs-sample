@@ -1,16 +1,14 @@
 var ttn = require('ttn');
 var fs = require('fs');
+var secrets = require('./secrets')
 
-var region = 'eu';
-var appId = 'secludedardunio';
-var accessKey = 'ttn-account-v2.qpEFQGw6xTFlulHbreeO3yk351RNQVrbkelC_CFNYS4';
 var options = {
   protocol: 'mqtts',
   // Assuming that the mqtt-ca certificate (https://www.thethingsnetwork.org/docs/applications/mqtt/quick-start.html) is in the same folder
   ca: [ fs.readFileSync('mqtt-ca.pem') ],
 }
 
-var client = new ttn.data.MQTT(region, appId, accessKey);
+var client = new ttn.data.MQTT(secrets.region, secrets.appId, secrets.accessKey);
 
 client.on('connect', function(connack) {
   console.log('[DEBUG]', 'Connect:', connack);
